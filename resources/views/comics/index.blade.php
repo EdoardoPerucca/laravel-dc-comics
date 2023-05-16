@@ -1,5 +1,32 @@
 @extends('layouts/main-layout')
 
 @section('content')
-    pagina 2
+
+<main>
+
+    <div class="main-bg-cards">
+
+        <div class="container-1000">
+            <div class="row">
+
+                @foreach ($comics as $singleComics)
+                <div class="col-2 comics-card">
+                    <a href="{{route('comics.show', $singleComics->id)}}" class="comics-card-inner">
+                        <div class="img-main-container">
+                            <img src="{{ $singleComics->thumb }}" alt="immagine">
+                        </div>         
+                        {{ $singleComics->series }}
+                    </a>
+                </div>
+                @endforeach
+            </div>
+
+            <div class="button-main">
+                <a href="#"><button>Load More</button></a>
+            </div>
+        </div>
+
+    </div>
+
+</main>
 @endsection

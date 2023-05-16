@@ -15,6 +15,10 @@
                 <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo">
             </div>
 
+            <div>
+                <a href="{{route('home')}}">Home</a>
+                <a href="{{route('comics.index')}}">Fumetti</a>
+            </div>
            
 
 
