@@ -15,13 +15,7 @@
                 <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo">
             </div>
 
-            <div class="links-nav">
-                <ul>
-                    @foreach ($links as $singleLink)
-                    <li><a href="{{ route($singleLink['route']) }}">{{ $singleLink['title'] }}</a></li>
-                    @endforeach
-                </ul>
-            </div>
+           
 
 
             <div class="input">

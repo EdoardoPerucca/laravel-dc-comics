@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ComicController;
+use App\Http\Controllers\Guest\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -81,7 +83,6 @@ $data = [
     'footerIcons' => $footerIcons
 ];
 
-Route::get('/Home', function () use ($data) {
+Route::get('/', [PageController::class, 'index']);
 
-    return view('home', $data);
-})->name('Home');
+Route::resource('/comics', ComicController::class);
