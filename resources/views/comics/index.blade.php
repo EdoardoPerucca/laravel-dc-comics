@@ -28,5 +28,9 @@
 
     </div>
 
+    <div>
+        <a href="{{route('comics.create')}}">Aggiungi un fumetto</a>
+    </div>
 </main>
+
 @endsection
