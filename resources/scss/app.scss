@@ -21,6 +21,17 @@ header {
                 font-size: .7em;
             }
 
+            .link-navbar {
+                list-style-type: none;
+                text-transform: uppercase;
+                color: white;
+                font-size: .7em;
+
+                a {
+                    font-weight: bold;
+                }
+            }
+
         }
 
     }

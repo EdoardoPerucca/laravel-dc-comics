@@ -15,9 +15,17 @@
                 <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo">
             </div>
 
-            <div>
+            <div class="link-navbar d-flex gap-3">
                 <a href="{{route('home')}}">Home</a>
-                <a href="{{route('comics.index')}}">Fumetti</a>
+                <a href="{{route('comics.index')}}">Comics</a>
+                <a href="#">Movie</a>
+                <a href="#">Tv</a>
+                <a href="#">Games</a>
+                <a href="#">Collectibles</a>
+                <a href="#">Video</a>
+                <a href="#">Fans</a>
+                <a href="#">News</a>
+                <a href="#">Shop</a>
             </div>
            
 
