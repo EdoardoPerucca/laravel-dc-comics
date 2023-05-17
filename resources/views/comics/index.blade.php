@@ -7,6 +7,11 @@
     <div class="main-bg-cards">
 
         <div class="container-1000">
+
+            <div class="button-main">
+                <a href="{{route('comics.create')}}"><button>Aggiungi un fumetto</button></a>
+            </div>
+
             <div class="row">
 
                 @foreach ($comics as $singleComics)
@@ -14,8 +19,10 @@
                     <a href="{{route('comics.show', $singleComics->id)}}" class="comics-card-inner">
                         <div class="img-main-container">
                             <img src="{{ $singleComics->thumb }}" alt="immagine">
+                        </div>
+                        <div class="comic-text">
+                            {{ $singleComics->series }}
                         </div>         
-                        {{ $singleComics->series }}
                     </a>
                 </div>
                 @endforeach
@@ -28,9 +35,7 @@
 
     </div>
 
-    <div>
-        <a href="{{route('comics.create')}}">Aggiungi un fumetto</a>
-    </div>
+    
 </main>
 
 @endsection

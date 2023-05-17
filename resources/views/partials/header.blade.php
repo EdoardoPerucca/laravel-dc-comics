@@ -10,7 +10,7 @@
 
     <div class="container-1000">
 
-        <nav>
+        <nav class="nav-center">
             <div class="nav-logo">
                 <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo">
             </div>
