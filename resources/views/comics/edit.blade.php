@@ -4,7 +4,7 @@
 
 
 <main>
-    <div class="container">
+    <div class="container-700">
 
 
         <form action="{{route('comics.update', $comic->id)}}" method="POST">
