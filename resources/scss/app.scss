@@ -192,7 +192,7 @@ main {
 }
 
 footer {
-    background-image: url(../img/footer-bg.jpg);
+    //background-image: url(../img/footer-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -202,53 +202,75 @@ footer {
         justify-content: space-between;
         margin: auto;
         max-width: 1000px;
-        max-height: 300px;
         overflow-y: hidden;
 
-        ul {
+        .footer-top-inner {
+            height: 450px;
+
+            display: flex;
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+
+            }
+
+            .footer-links {
+                width: 50%;
+                height: 100%;
+                padding: 2em 0;
+
+                display: flex;
+                flex-flow: column wrap;
+                gap: 2em;
+
+                li {
+                    strong {
+                        margin-bottom: 1rem;
+                        font-size: .9em;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                }
+            }
 
 
-            li {
 
-                text-decoration: none;
+        }
+
+    }
+
+    .footer-bottom-background {
+
+        width: 100%;
+        background-color: #303030;
+    }
+
+    .footer-bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding: 1em;
+
+        button {
+            color: white;
+            padding: 10px 20px;
+            text-transform: uppercase;
+        }
+
+        .footer-bottom-right {
+            display: flex;
+            align-items: center;
+            gap: 2em;
+            color: #0282f9;
+            text-transform: uppercase;
+
+            img {
+                height: 2em;
             }
         }
 
-
-
-    }
-
-}
-
-.footer-bottom-background {
-
-    width: 100%;
-    background-color: #303030;
-}
-
-.footer-bottom {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding: 1em;
-
-    button {
-        color: white;
-        padding: 10px 20px;
-        text-transform: uppercase;
-    }
-
-    .footer-bottom-right {
-        display: flex;
-        align-items: center;
-        gap: 2em;
-        color: #0282f9;
-        text-transform: uppercase;
-
-        img {
-            height: 2em;
-        }
     }
 
 }
